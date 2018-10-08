@@ -1,0 +1,106 @@
+=== Visual Studio Community 2017 for Mac ===
+
+Version 7.6.6 (build 17)
+Installation UUID: ee418bc8-8075-41f4-a89f-c6251108fe1d
+Runtime:
+    Mono 5.12.0.301 (2018-02/4fe3280bba1) (64-bit)
+    GTK+ 2.24.23 (Raleigh theme)
+    Xamarin.Mac 4.4.1.178 (master / eeaeb7e6)
+
+    Package version: 512000301
+
+=== NuGet ===
+
+Version: 4.3.1.4445
+
+=== .NET Core ===
+
+Runtime: /usr/local/share/dotnet/dotnet
+Runtime Versions:
+    2.1.2
+    2.1.1
+    2.0.5
+    2.0.0
+SDK: /usr/local/share/dotnet/sdk/2.1.302/Sdks
+SDK Versions:
+    2.1.302
+    2.1.301
+    2.1.4
+    2.0.0
+MSBuild SDKs: /Library/Frameworks/Mono.framework/Versions/5.12.0/lib/mono/msbuild/15.0/bin/Sdks
+
+=== Xamarin.Profiler ===
+
+Version: 1.6.3
+Location: /Applications/Xamarin Profiler.app/Contents/MacOS/Xamarin Profiler
+
+=== Xamarin.Android ===
+
+Version: 9.0.0.20 (Visual Studio Community)
+Android SDK: /Users/benfranklin/Library/Developer/Xamarin/android-sdk-macosx
+    Supported Android versions:
+        2.3   (API level 10)
+        4.0.3 (API level 15)
+        4.4   (API level 19)
+        5.0   (API level 21)
+        8.1   (API level 27)
+
+SDK Tools Version: 
+SDK Platform Tools Version: 22.0.0
+SDK Build Tools Version: 28.0.2
+
+Java SDK: /usr
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+
+Android Designer EPL code available here:
+https://github.com/xamarin/AndroidDesigner.EPL
+
+=== Apple Developer Tools ===
+
+Xcode 10.0 (14320.25)
+Build 10A255
+
+=== Xamarin.Mac ===
+
+Version: 4.6.0.14 (Visual Studio Community)
+Hash: 1a6e2786
+Branch: 
+Build date: 2018-08-28 00:12:06-0400
+
+=== Xamarin.iOS ===
+
+Version: 12.0.0.15 (Visual Studio Community)
+Hash: 84552a46
+Branch: xcode10
+Build date: 2018-09-17 21:54:33-0400
+
+=== Xamarin Inspector ===
+
+Version: 1.4.3
+Hash: db27525
+Branch: 1.4-release
+Build date: Mon, 09 Jul 2018 21:20:18 GMT
+Client compatibility: 1
+
+=== Build Information ===
+
+Release ID: 706060017
+Git revision: 822323b5f6295b271d4c9bfaca4129f90ec41f38
+Build date: 2018-09-18 20:19:40+00
+Build branch: release-7.6-xcode10
+Xamarin extensions: a83eb4b7ad9174ac2e705f2c4257ecd15688ba97
+
+=== Operating System ===
+
+Mac OS X 10.13.6
+Darwin 17.7.0 Darwin Kernel Version 17.7.0
+    Thu Jun 21 22:53:14 PDT 2018
+    root:xnu-4570.71.2~1/RELEASE_X86_64 x86_64
+
+=== Enabled user installed extensions ===
+
+Vim 0.61.0
+Internet of Things (IoT) development (Preview) 7.1
+

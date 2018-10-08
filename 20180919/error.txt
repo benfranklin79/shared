@@ -1,0 +1,63 @@
+/Users/benfranklin/Projects/test/test.iOS/Resources/LaunchScreen.storyboard: Error: 2018-09-19 21:29:40.186 ibtoold[60284:8470518] +[SimServiceContext serviceContextForDeveloperDir:error:]: unrecognized selector sent to class 0x11826dc00
+2018-09-19 21:29:40.190 ibtoold[60284:8470518] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '+[SimServiceContext serviceContextForDeveloperDir:error:]: unrecognized selector sent to class 0x11826dc00'
+*** First throw call stack:
+(
+    0   CoreFoundation                      0x00007fff2cea02db __exceptionPreprocess + 171
+    1   libobjc.A.dylib                     0x00007fff5403dc76 objc_exception_throw + 48
+    2   CoreFoundation                      0x00007fff2cf38cf4 +[NSObject(NSObject) doesNotRecognizeSelector:] + 132
+    3   CoreFoundation                      0x00007fff2ce16820 ___forwarding___ + 1456
+    4   CoreFoundation                      0x00007fff2ce161e8 _CF_forwarding_prep_0 + 120
+    5   IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117daa2dc __IBSharedInterfaceBuilderSpecificSimulatorServiceContext_block_invoke_2 + 162
+    6   IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117daa20e __IBSharedInterfaceBuilderSpecificSimulatorServiceContext_block_invoke + 28
+    7   libdispatch.dylib                   0x00007fff54c1ddb8 _dispatch_client_callout + 8
+    8   libdispatch.dylib                   0x00007fff54c1dd6b dispatch_once_f + 41
+    9   IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117daa1ad IBSharedInterfaceBuilderSpecificSimulatorServiceContext + 1165
+    10  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117c8803e -[IBCocoaTouchIdiom trySimDeviceTypeForIdentifier:error:] + 56
+    11  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117c881f9 -[IBCocoaTouchIdiom simDeviceTypeForToolDescription:error:] + 153
+    12  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117d41ea4 -[IBCocoaTouchPlatformToolDescription preferredDeviceTypeReturningError:] + 114
+    13  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117c5d2f7 -[IBCocoaTouchToolManager executionContextForDescription:error:] + 225
+    14  IDEInterfaceBuilderKit              0x0000000108fbbe41 -[IBAbstractInterfaceBuilderPlatformToolManager _determineContextsForLaunchingToolWithDescription:returningLaunchContext:returningExecutionContext:returningFailureContext:error:forReason:] + 136
+    15  IDEInterfaceBuilderKit              0x0000000108fbc15f -[IBAbstractInterfaceBuilderPlatformToolManager launchNewToolWithDescription:error:forReason:] + 154
+    16  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117c5de04 -[IBCocoaTouchToolManager launchNewToolWithDescription:error:forReason:] + 89
+    17  IDEInterfaceBuilderKit              0x0000000108fb9d66 -[IBAbstractInterfaceBuilderPlatformToolManager cachedToolIncrementBusyWithDescription:error:forReason:] + 258
+    18  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117c5dca0 -[IBCocoaTouchToolManager cachedToolIncrementBusyWithDescription:error:forReason:] + 89
+    19  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cdb4ce __122-[IBCocoaTouchXIBDocumentCompiler compiledKeyedObjectsDataWithMarshallingContext:archivingContext:diagnosticsBlock:error:]_block_invoke.95 + 267
+    20  libdispatch.dylib                   0x00007fff54c1ddb8 _dispatch_client_callout + 8
+    21  libdispatch.dylib                   0x00007fff54c311e1 _dispatch_queue_barrier_sync_invoke_and_complete + 60
+    22  DVTFoundation                       0x0000000109c123db DVTDispatchSync + 208
+    23  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cdae26 -[IBCocoaTouchXIBDocumentCompiler compiledKeyedObjectsDataWithMarshallingContext:archivingContext:diagnosticsBlock:error:] + 3436
+    24  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cdc63c __121-[IBCocoaTouchXIBDocumentCompiler compiledPackageWithOptions:marshallingContext:archivingContext:diagnosticsBlock:error:]_block_invoke + 72
+    25  IDEInterfaceBuilderKit              0x000000010906168b -[IBDocumentCompiler invokeWhileUsingSourceAsIntermediateDocument:] + 72
+    26  IDEInterfaceBuilderKit              0x00000001090619b8 -[IBDocumentCompiler invokeWithIntermediateDocumentOfTargetRuntime:alwaysCopy:block:] + 316
+    27  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cdbc56 -[IBCocoaTouchXIBDocumentCompiler compiledPackageWithOptions:marshallingContext:archivingContext:diagnosticsBlock:error:] + 696
+    28  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cc9c5d -[IBCocoaTouchStoryboardDocumentCompiler compileCompilationUnit:options:forSceneCompilationGroup:error:] + 407
+    29  IDEInterfaceBuilderKit              0x00000001092d6bbd -[IBStoryboardSceneCompilationGroup compilationResultsForCompilationUnits:options:returningErrors:] + 658
+    30  IDEInterfaceBuilderKit              0x00000001092c4305 -[IBStoryboardDocumentCompiler compileUnitsFromCompilationGroups:filter:options:errors:] + 505
+    31  IDEInterfaceBuilderKit              0x00000001092c5b69 __78-[IBStoryboardDocumentCompiler compileContentsOfStoryboardWithOptions:errors:]_block_invoke + 209
+    32  IDEInterfaceBuilderKit              0x0000000109164887 IBWithAutoInvalidationPool + 180
+    33  IDEInterfaceBuilderKit              0x00000001092c5901 -[IBStoryboardDocumentCompiler compileContentsOfStoryboardWithOptions:errors:] + 242
+    34  IDEInterfaceBuilderKit              0x00000001092c5f0f -[IBStoryboardDocumentCompiler internalCompileWithOptions:error:] + 174
+    35  IDEInterfaceBuilderCocoaTouchIntegration 0x0000000117cca058 -[IBCocoaTouchStoryboardDocumentCompiler internalCompileWithOptions:error:] + 131
+    36  IDEInterfaceBuilderKit              0x00000001092c6f30 __57-[IBStoryboardDocumentCompiler compileWithOptions:error:]_block_invoke + 261
+    37  IDEInterfaceBuilderKit              0x0000000109061a43 __85-[IBDocumentCompiler invokeWithIntermediateDocumentOfTargetRuntime:alwaysCopy:block:]_block_invoke + 137
+    38  IDEInterfaceBuilderKit              0x00000001090617b2 -[IBDocumentCompiler invokeWithIntermediateDocument:] + 244
+    39  IDEInterfaceBuilderKit              0x0000000109061970 -[IBDocumentCompiler invokeWithIntermediateDocumentOfTargetRuntime:alwaysCopy:block:] + 244
+    40  IDEInterfaceBuilderKit              0x00000001092c6bb8 -[IBStoryboardDocumentCompiler compileWithOptions:error:] + 669
+    41  IDEInterfaceBuilderKit              0x0000000109061b4a +[IBDocumentCompiler compileContentsOfDocument:options:error:] + 123
+    42  IDEInterfaceBuilderKit              0x000000010901b076 __47-[IBDocument compiledPackageWithOptions:error:]_block_invoke + 56
+    43  IDEInterfaceBuilderKit              0x000000010905f2b9 -[IBDocumentAutolayoutManager ignoreAutolayoutStatusInvalidationDuring:] + 27
+    44  IDEInterfaceBuilderKit              0x000000010901afca -[IBDocument compiledPackageWithOptions:error:] + 227
+    45  IDEInterfaceBuilderKit              0x000000010901b315 -[IBDocument compileAndWriteToPath:withOptions:error:] + 180
+    46  ibtoold                             0x0000000108babe73 IBCompileDocumentForSingleTargetDevice + 211
+    47  ibtoold                             0x0000000108ba773c -[IBCLIInterfaceBuilderToolPersona invokeArguments:outputDictionary:] + 26169
+    48  ibtoold                             0x0000000108baa67e -[IBCLIInterfaceBuilderToolPersona runSingleInvocation:outputtingToFileHandle:andVerifyingEnvironment:] + 3171
+    49  ibtoold                             0x0000000108bae0e7 IBCLIServerRunSingleInvocation + 520
+    50  ibtoold                             0x0000000108bae73e __IBCLIServerRunSingleInvocationWithIODirectedAtPipesAndUnlinkOnSuccess_block_invoke_2 + 34
+    51  ibtoold                             0x0000000108bae60c __IBCLIServerRunSingleInvocationWithIODirectedAtPipesAndUnlinkOnSuccess_block_invoke + 857
+    52  ibtoold                             0x0000000108b9d3f5 -[IBCLIErrorForwarder forwardErrorOutputToDescriptor:whileInvokingBlock:] + 110
+    53  ibtoold                             0x0000000108badc9d IBCLIServerRunSingleInvocationWithIODirectedAtPipesAndUnlinkOnSuccess + 581
+    54  ibtoold                             0x0000000108baca7d main + 2673
+    55  libdyld.dylib                       0x00007fff54c57015 start + 1
+    56  ???                                 0x0000000000000002 0x0 + 2
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException (test.iOS)
