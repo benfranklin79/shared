@@ -29,7 +29,10 @@ terraform deployment the [execution details](./exec_details_2.txt) are not as co
 see that the `_GAE_APPLICATION_YAML_PATH` variable has been set but the runtime
 is not picked up.
 
-## Terraform Deployment
+## Terraform Deployment Steps
+
+Below is a simplified version of what we have in our production and test system and should hopefully provide enough information to
+reproduce the issue.
 
 We use this command to create the publish package from the included test application which is zipped up:
 
