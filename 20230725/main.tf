@@ -24,9 +24,6 @@ resource "google_app_engine_flexible_app_version" "tenantProcessor_v1" {
   
   env_variables = {
     ASPNETCORE_ENVIRONMENT =  "xxxxx" 
-    AWS_ACCESS_KEY_ID      =  "xxxxx"
-    AWS_SECRET_ACCESS_KEY  = "xxxxx" 
-    AWS_REGION             = "eu-west-1"
     APP_PROJECT_ID         = "some project value"
   }
 
