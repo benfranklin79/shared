@@ -1,6 +1,6 @@
 data "archive_file" "alertsProcessor" {
   type        = "zip"
-  source_dir  = "${path.module}/applications/tenantProcessor"
+  source_dir  = "${path.module}/AppEngineTest\bin\release\net6.0\publish"
   output_path = "${path.module}/../_archive/appengine/alerts/tenantProcessor.zip"
 }
 
