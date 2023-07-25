@@ -5,8 +5,8 @@ This folder contains extra supporting information for
 
 The actual deployment I'm having problems with creates a publish package
 of an application and saves it as an artifact which is then picked up by 
-a separate build process which runs a terraform deployment. See (terraform
-deployment)[#terraform-deployment]
+a separate build process which runs a terraform deployment. See [terraform
+deployment](#terraform-deployment)
 
 ## First Test - Deploy Without Terraform
 
