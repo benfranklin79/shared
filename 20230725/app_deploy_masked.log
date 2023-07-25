@@ -1,0 +1,276 @@
+Beginning deployment of service [test]...
+#============================================================#
+#= Uploading 21 files to Google Cloud Storage               =#
+#============================================================#
+File upload done.
+Updating service [test] (this may take several minutes)...done.
+--------------------------------------------------------------------------------------------------------------------------------- REMOTE BUILD OUTPUT ----------------------------------------------------------------------------------------------------------------------------------
+starting build "41bb3332-4046-4a2e-a355-045e898b8ed0"
+
+FETCHSOURCE
+BUILD
+Starting Step #0 - "fetch"
+Step #0 - "fetch": Pulling image: eu.gcr.io/gae-runtimes/utilities/gcs-fetcher:base_20230625_18_04_RC00
+Step #0 - "fetch": base_20230625_18_04_RC00: Pulling from gae-runtimes/utilities/gcs-fetcher
+Step #0 - "fetch": Digest: sha256:f8eb5485a9c4e9ad1b83bb7c7a8456e03ad662a915e37231b422435abab8734b
+Step #0 - "fetch": Status: Downloaded newer image for eu.gcr.io/gae-runtimes/utilities/gcs-fetcher:base_20230625_18_04_RC00
+Step #0 - "fetch": eu.gcr.io/gae-runtimes/utilities/gcs-fetcher:base_20230625_18_04_RC00
+Step #0 - "fetch": Fetching manifest gs://staging.xxxxxxxxxx.appspot.com/ae/869339c8-1500-486e-b8af-08ee41b44834/manifest.json.
+Step #0 - "fetch": Processing 93 files.
+Step #0 - "fetch": ******************************************************
+Step #0 - "fetch": Status:                      SUCCESS
+Step #0 - "fetch": Started:                     2023-07-25T07:24:45Z
+Step #0 - "fetch": Completed:                   2023-07-25T07:24:47Z
+Step #0 - "fetch": Requested workers:    200
+Step #0 - "fetch": Actual workers:        93
+Step #0 - "fetch": Total files:           93
+Step #0 - "fetch": Total retries:          0
+Step #0 - "fetch": GCS timeouts:           0
+Step #0 - "fetch": MiB downloaded:         3.85 MiB
+Step #0 - "fetch": MiB/s throughput:       4.49 MiB/s
+Step #0 - "fetch": Time for manifest:    553.18 ms
+Step #0 - "fetch": Total time:             1.41 s
+Step #0 - "fetch": ******************************************************
+Finished Step #0 - "fetch"
+Starting Step #1 - "pre-buildpack"
+Step #1 - "pre-buildpack": Pulling image: eu.gcr.io/gae-runtimes/utilities/buildpack-shim:base_20230625_18_04_RC00
+Step #1 - "pre-buildpack": base_20230625_18_04_RC00: Pulling from gae-runtimes/utilities/buildpack-shim
+Step #1 - "pre-buildpack": Digest: sha256:664613f080173667abffb0efac9dfb503199ee8eee239b6aa62f05eacb9bf1cc
+Step #1 - "pre-buildpack": Status: Downloaded newer image for eu.gcr.io/gae-runtimes/utilities/buildpack-shim:base_20230625_18_04_RC00
+Step #1 - "pre-buildpack": eu.gcr.io/gae-runtimes/utilities/buildpack-shim:base_20230625_18_04_RC00
+Step #1 - "pre-buildpack": Preparing directory /layers
+Step #1 - "pre-buildpack": Preparing directory /workspace
+Step #1 - "pre-buildpack": Preparing directory /builder/home
+Step #1 - "pre-buildpack": Preparing directory /builder/outputs
+Step #1 - "pre-buildpack": Preparing directory /platform/env
+Step #1 - "pre-buildpack": Passing build environment variable BUILDER_OUTPUT to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_DEBUG to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_RUNTIME to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_LABEL_BUILDER_VERSION to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_LABEL_BUILDER_IMAGE to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_LABEL_RUN_IMAGE to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_RUNTIME_VERSION to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GOOGLE_ASP_NET_CORE_VERSION to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable GAE_APPLICATION_YAML_PATH to buildpacks
+Step #1 - "pre-buildpack": Passing build environment variable X_GOOGLE_TARGET_PLATFORM to buildpacks
+Finished Step #1 - "pre-buildpack"
+Starting Step #2 - "build"
+Step #2 - "build": Pulling image: eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/builder:dotnet_20230717_RC00
+Step #2 - "build": dotnet_20230717_RC00: Pulling from gae-runtimes/buildpacks/google-gae-22/dotnet/builder
+Step #2 - "build": 837dd4791cdc: Already exists
+Step #2 - "build": 4c144dba7f7b: Already exists
+Step #2 - "build": bd1a65a93f01: Already exists
+Step #2 - "build": 110b1da3715d: Pulling fs layer
+Step #2 - "build": 870edd186b4d: Pulling fs layer
+Step #2 - "build": 60ca24da55d3: Pulling fs layer
+Step #2 - "build": 66b8ed8823da: Pulling fs layer
+Step #2 - "build": 06f428a8446f: Pulling fs layer
+Step #2 - "build": b63bd9bb2674: Pulling fs layer
+Step #2 - "build": ee402da47d4b: Pulling fs layer
+Step #2 - "build": 69a917129d46: Pulling fs layer
+Step #2 - "build": 62c9b663321c: Pulling fs layer
+Step #2 - "build": 10955d6b645d: Pulling fs layer
+Step #2 - "build": ed4c260ada1e: Pulling fs layer
+Step #2 - "build": afb5c3a2e8e8: Pulling fs layer
+Step #2 - "build": 27fa3f9ace4c: Pulling fs layer
+Step #2 - "build": c0562aa5ea2a: Pulling fs layer
+Step #2 - "build": d9055bb3b90f: Pulling fs layer
+Step #2 - "build": c16953c657a4: Pulling fs layer
+Step #2 - "build": 162d35b16138: Pulling fs layer
+Step #2 - "build": ce81c817c890: Pulling fs layer
+Step #2 - "build": 34ce8ba30961: Pulling fs layer
+Step #2 - "build": 4f4fb700ef54: Pulling fs layer
+Step #2 - "build": 66b8ed8823da: Waiting
+Step #2 - "build": 06f428a8446f: Waiting
+Step #2 - "build": b63bd9bb2674: Waiting
+Step #2 - "build": ee402da47d4b: Waiting
+Step #2 - "build": 69a917129d46: Waiting
+Step #2 - "build": 62c9b663321c: Waiting
+Step #2 - "build": 10955d6b645d: Waiting
+Step #2 - "build": ed4c260ada1e: Waiting
+Step #2 - "build": afb5c3a2e8e8: Waiting
+Step #2 - "build": 27fa3f9ace4c: Waiting
+Step #2 - "build": c0562aa5ea2a: Waiting
+Step #2 - "build": d9055bb3b90f: Waiting
+Step #2 - "build": c16953c657a4: Waiting
+Step #2 - "build": 162d35b16138: Waiting
+Step #2 - "build": ce81c817c890: Waiting
+Step #2 - "build": 34ce8ba30961: Waiting
+Step #2 - "build": 4f4fb700ef54: Waiting
+Step #2 - "build": 870edd186b4d: Verifying Checksum
+Step #2 - "build": 870edd186b4d: Download complete
+Step #2 - "build": 110b1da3715d: Download complete
+Step #2 - "build": 110b1da3715d: Pull complete
+Step #2 - "build": 870edd186b4d: Pull complete
+Step #2 - "build": 66b8ed8823da: Verifying Checksum
+Step #2 - "build": 66b8ed8823da: Download complete
+Step #2 - "build": 06f428a8446f: Verifying Checksum
+Step #2 - "build": 06f428a8446f: Download complete
+Step #2 - "build": 60ca24da55d3: Verifying Checksum
+Step #2 - "build": 60ca24da55d3: Download complete
+Step #2 - "build": 60ca24da55d3: Pull complete
+Step #2 - "build": 66b8ed8823da: Pull complete
+Step #2 - "build": 06f428a8446f: Pull complete
+Step #2 - "build": ee402da47d4b: Verifying Checksum
+Step #2 - "build": ee402da47d4b: Download complete
+Step #2 - "build": 69a917129d46: Download complete
+Step #2 - "build": b63bd9bb2674: Verifying Checksum
+Step #2 - "build": b63bd9bb2674: Download complete
+Step #2 - "build": 62c9b663321c: Download complete
+Step #2 - "build": b63bd9bb2674: Pull complete
+Step #2 - "build": ee402da47d4b: Pull complete
+Step #2 - "build": ed4c260ada1e: Download complete
+Step #2 - "build": 10955d6b645d: Download complete
+Step #2 - "build": 69a917129d46: Pull complete
+Step #2 - "build": 62c9b663321c: Pull complete
+Step #2 - "build": 10955d6b645d: Pull complete
+Step #2 - "build": ed4c260ada1e: Pull complete
+Step #2 - "build": afb5c3a2e8e8: Download complete
+Step #2 - "build": 27fa3f9ace4c: Verifying Checksum
+Step #2 - "build": 27fa3f9ace4c: Download complete
+Step #2 - "build": afb5c3a2e8e8: Pull complete
+Step #2 - "build": c0562aa5ea2a: Verifying Checksum
+Step #2 - "build": c0562aa5ea2a: Download complete
+Step #2 - "build": 27fa3f9ace4c: Pull complete
+Step #2 - "build": c0562aa5ea2a: Pull complete
+Step #2 - "build": d9055bb3b90f: Verifying Checksum
+Step #2 - "build": d9055bb3b90f: Download complete
+Step #2 - "build": d9055bb3b90f: Pull complete
+Step #2 - "build": c16953c657a4: Verifying Checksum
+Step #2 - "build": c16953c657a4: Download complete
+Step #2 - "build": 162d35b16138: Verifying Checksum
+Step #2 - "build": 162d35b16138: Download complete
+Step #2 - "build": c16953c657a4: Pull complete
+Step #2 - "build": ce81c817c890: Verifying Checksum
+Step #2 - "build": ce81c817c890: Download complete
+Step #2 - "build": 162d35b16138: Pull complete
+Step #2 - "build": ce81c817c890: Pull complete
+Step #2 - "build": 34ce8ba30961: Verifying Checksum
+Step #2 - "build": 34ce8ba30961: Download complete
+Step #2 - "build": 34ce8ba30961: Pull complete
+Step #2 - "build": 4f4fb700ef54: Verifying Checksum
+Step #2 - "build": 4f4fb700ef54: Download complete
+Step #2 - "build": 4f4fb700ef54: Pull complete
+Step #2 - "build": Digest: sha256:f9b71368071edcb59d14da97f1696070c8f1fbc75b28ae8f7cdf612df8d4b1e7
+Step #2 - "build": Status: Downloaded newer image for eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/builder:dotnet_20230717_RC00
+Step #2 - "build": eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/builder:dotnet_20230717_RC00
+Step #2 - "build": Warning: No cached data will be used, no cache specified.
+Step #2 - "build": ===> ANALYZING
+Step #2 - "build": Image with name "eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834" not found
+Step #2 - "build": ===> DETECTING
+Step #2 - "build": google.config.flex       0.9.1
+Step #2 - "build": google.dotnet.flex       0.9.0
+Step #2 - "build": google.dotnet.sdk        0.9.1
+Step #2 - "build": google.dotnet.publish    0.9.0
+Step #2 - "build": google.dotnet.runtime    0.9.1
+Step #2 - "build": google.utils.label-image 0.0.2
+Step #2 - "build": ===> RESTORING
+Step #2 - "build": Skipping buildpack layer analysis
+Step #2 - "build": ===> BUILDING
+Step #2 - "build": === Config - Flex (google.config.flex@0.9.1) ===
+Step #2 - "build": === .NET - Flex (google.dotnet.flex@0.9.0) ===
+Step #2 - "build": === .NET - Sdk (google.dotnet.sdk@0.9.1) ===
+Step #2 - "build": Using .NET Core SDK version from GOOGLE_RUNTIME_VERSION: 6
+Step #2 - "build": 2023/07/25 07:25:00 [DEBUG] GET https://dl.google.com/runtimes/ubuntu2204/dotnetsdk/version.json
+Step #2 - "build": DEBUG: ***** CACHE MISS: "dotnetsdk"
+Step #2 - "build": Installing .NET SDK v6.0.412.
+Step #2 - "build": 2023/07/25 07:25:00 [DEBUG] GET https://dl.google.com/runtimes/ubuntu2204/dotnetsdk/dotnetsdk-6.0.412.tar.gz
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": === .NET - Publish (google.dotnet.publish@0.9.0) ===
+Step #2 - "build": --------------------------------------------------------------------------------
+Step #2 - "build": Running "find . -regex .*\\.\\(cs\\|fs\\|vb\\)proj"
+Step #2 - "build": ./AppEngineTest.csproj
+Step #2 - "build": Done "find . -regex .*\\.\\(cs\\|fs\\|vb\\)proj" (3.082551ms)
+Step #2 - "build": Installing application dependencies.
+Step #2 - "build": --------------------------------------------------------------------------------
+Step #2 - "build": Running "find . -regex .*\\.\\(cs\\|fs\\|vb\\)proj"
+Step #2 - "build": ./AppEngineTest.csproj
+Step #2 - "build": Done "find . -regex .*\\.\\(cs\\|fs\\|vb\\)proj" (2.159124ms)
+Step #2 - "build": --------------------------------------------------------------------------------
+Step #2 - "build": Running "dotnet --version"
+Step #2 - "build": 6.0.412
+Step #2 - "build": Done "dotnet --version" (184.689513ms)
+Step #2 - "build": DEBUG: Current dependency hash: "512246c0723c40a619f12112b21238191d61344199b160c28ea20aebd15e10e2"
+Step #2 - "build": DEBUG:   Cache dependency hash: ""
+Step #2 - "build": DEBUG: No metadata found from a previous build, skipping cache.
+Step #2 - "build": DEBUG: ***** CACHE MISS: "prod dependencies"
+Step #2 - "build": --------------------------------------------------------------------------------
+Step #2 - "build": Running "dotnet restore --packages /layers/google.dotnet.publish/packages ./AppEngineTest.csproj (DOTNET_CLI_TELEMETRY_OPTOUT=true)"
+Step #2 - "build":
+Step #2 - "build": Welcome to .NET 6.0!
+Step #2 - "build": ---------------------
+Step #2 - "build": SDK Version: 6.0.412
+Step #2 - "build":
+Step #2 - "build": ----------------
+Step #2 - "build": Installed an ASP.NET Core HTTPS development certificate.
+Step #2 - "build": To trust the certificate run 'dotnet dev-certs https --trust' (Windows and macOS only).
+Step #2 - "build": Learn about HTTPS: https://aka.ms/dotnet-https
+Step #2 - "build": ----------------
+Step #2 - "build": Write your first app: https://aka.ms/dotnet-hello-world
+Step #2 - "build": Find out what's new: https://aka.ms/dotnet-whats-new
+Step #2 - "build": Explore documentation: https://aka.ms/dotnet-docs
+Step #2 - "build": Report issues and find source on GitHub: https://github.com/dotnet/core
+Step #2 - "build": Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+Step #2 - "build": --------------------------------------------------------------------------------------
+Step #2 - "build":   Determining projects to restore...
+Step #2 - "build":   Restored /workspace/AppEngineTest.csproj (in 1.49 sec).
+Step #2 - "build": Done "dotnet restore --packages /layers/google.dotnet.publish/pack..." (3.647469996s)
+Step #2 - "build": WARNING: A project file was uploaded, causing `dotnet publish` to be called, but the output bin folder already existed in application source.  Deleting /layers/google.dotnet.publish/publish/bin.
+Step #2 - "build": --------------------------------------------------------------------------------
+Step #2 - "build": Running "dotnet publish -nologo --verbosity minimal --configuration Release --output /layers/google.dotnet.publish/publish/bin --no-restore --packages /layers/google.dotnet.publish/packages ./AppEngineTest.csproj (DOTNET_CLI_TELEMETRY_OPTOUT=true)"
+Step #2 - "build":   AppEngineTest -> /workspace/bin/Release/net6.0/AppEngineTest.dll
+Step #2 - "build":   AppEngineTest -> /layers/google.dotnet.publish/publish/bin/
+Step #2 - "build": Done "dotnet publish -nologo --verbosity minimal --configuration R..." (4.647593078s)
+Step #2 - "build": Determined runtime version from GOOGLE_ASP_NET_CORE_VERSION: 6.x.x
+Step #2 - "build": WARNING: Deleted folder: /workspace/bin
+Step #2 - "build": Determining entrypoint from output directory /layers/google.dotnet.publish/publish/bin and project file ./AppEngineTest.csproj
+Step #2 - "build": === .NET - Runtime (google.dotnet.runtime@0.9.1) ===
+Step #2 - "build": Determined runtime version from GOOGLE_ASP_NET_CORE_VERSION: 6.x.x
+Step #2 - "build": 2023/07/25 07:25:17 [DEBUG] GET https://dl.google.com/runtimes/ubuntu2204/aspnetcore/version.json
+Step #2 - "build": DEBUG: ***** CACHE MISS: "aspnetcore"
+Step #2 - "build": Installing  v6.0.20.
+Step #2 - "build": 2023/07/25 07:25:17 [DEBUG] GET https://dl.google.com/runtimes/ubuntu2204/aspnetcore/aspnetcore-6.0.20.tar.gz
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+Step #2 - "build": === Utils - Label Image (google.utils.label-image@0.0.2) ===
+Step #2 - "build": Adding image label google.builder-version: dotnet_20230717_RC00
+Step #2 - "build": Adding image label google.builder-image: eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/builder:dotnet_20230717_RC00
+Step #2 - "build": Adding image label google.run-image: eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/run:dotnet_20230717_RC00
+Step #2 - "build": ===> EXPORTING
+Step #2 - "build": Adding layer 'google.dotnet.flex:main_env'
+Step #2 - "build": Adding layer 'google.dotnet.publish:publish'
+Step #2 - "build": Adding layer 'google.dotnet.runtime:runtime'
+Step #2 - "build": Adding layer 'buildpacksio/lifecycle:launch.sbom'
+Step #2 - "build": Adding 1/1 app layer(s)
+Step #2 - "build": Adding layer 'buildpacksio/lifecycle:launcher'
+Step #2 - "build": Adding layer 'buildpacksio/lifecycle:config'
+Step #2 - "build": Adding layer 'buildpacksio/lifecycle:process-types'
+Step #2 - "build": Adding label 'io.buildpacks.lifecycle.metadata'
+Step #2 - "build": Adding label 'io.buildpacks.build.metadata'
+Step #2 - "build": Adding label 'io.buildpacks.project.metadata'
+Step #2 - "build": Adding label 'google.builder-version'
+Step #2 - "build": Adding label 'google.builder-image'
+Step #2 - "build": Adding label 'google.run-image'
+Step #2 - "build": Setting default process type 'web'
+Step #2 - "build": Saving eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834...
+Step #2 - "build": *** Images (sha256:e55add2cdb6f27328c2bb836dac9a4cc936776afd5c79f7290300cda7578fc99):
+Step #2 - "build":       eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834
+Finished Step #2 - "build"
+Starting Step #3 - "post-buildpack"
+Step #3 - "post-buildpack": Already have image (with digest): eu.gcr.io/gae-runtimes/utilities/buildpack-shim:base_20230625_18_04_RC00
+Step #3 - "post-buildpack": Retagging eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834 as eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:latest
+Step #3 - "post-buildpack": Image eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834 copied to eu.gcr.io/xxxxxxxxxx/appengine/test.20230725t082427:latest
+Finished Step #3 - "post-buildpack"
+PUSH
+DONE
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Updating service [test] (this may take several minutes)...|WARNING: A project file was uploaded, causing `dotnet publish` to be called, but the output bin folder already existed in application source.  Deleting /layers/google.dotnet.publish/publish/bin.
+
+WARNING: Deleted folder: /workspace/bin
+
+Updating service [test] (this may take several minutes)...failed.
+ERROR: (gcloud.app.deploy) Error Response: [3] Flex operation projects/xxxxxxxxxx/regions/europe-west1/operations/9ad22b9b-0f43-4fcf-8a61-535725e5cf37 error [INVALID_ARGUMENT]: An internal error occurred while processing task /app-engine-flex/insert_flex_deployment/flex_create_resources>2023-07-25T07:25:42.746Z5029.wd.1: Network 'default' does not exist
+
