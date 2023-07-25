@@ -1,0 +1,47 @@
+Build ID
+4978dc8c-7c26-4f0a-815f-39e12998dfc9
+Status
+Failed
+Region
+global
+Tags
+p-flexr-aspnetcoreb-dotnet_20230717_RC00
+Timing
+Created
+25 July 2023 at 10:19:08 UTC+1
+Started
+25 July 2023 at 10:19:09 UTC+1
+Finished
+25 July 2023 at 10:19:21 UTC+1
+Queued time
+1 sec
+Total build time
+12 sec
+Fetch source
+-
+Build step(s)
+10 sec
+Push
+-
+Timeout
+10 min
+Service account
+651363219778@cloudbuild.gserviceaccount.com
+User substitutions
+_OUTPUT_IMAGE
+eu.gcr.io/xxxxxxxx/appengine/energyalerts-p-vanilla.v1
+_ZEUS_SOURCE_TYPE
+Archive
+_ZEUS_SOURCE_LOCATION
+https://storage.googleapis.com/dtl-app-engine-sandbox/energyAlertsTenantProcessor-c300639d33317270dcb60e66edd675e666a491d7.zip
+_GAE_APPLICATION_YAML_PATH
+app.yaml
+Built-in substitutions
+BUILD_ID
+4978dc8c-7c26-4f0a-815f-39e12998dfc9
+LOCATION
+global
+PROJECT_ID
+xxxxxxxxxxxxxxx
+PROJECT_NUMBER
+651363219778

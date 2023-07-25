@@ -1,0 +1,88 @@
+Build ID
+41bb3332-4046-4a2e-a355-045e898b8ed0
+Status
+Successful
+Region
+global
+Tags
+p-flexr-aspnetcores-STACK_GAE_22b-dotnet_20230717_RC00
+Timing
+Created
+25 July 2023 at 08:24:40 UTC+1
+Started
+25 July 2023 at 08:24:42 UTC+1
+Finished
+25 July 2023 at 08:25:36 UTC+1
+Queued time
+1 sec
+Total build time
+54 sec
+Fetch source
+-
+Build step(s)
+52 sec
+Push
+-
+Timeout
+10 min
+Service account
+651363219778@cloudbuild.gserviceaccount.com
+User substitutions
+_ZEUS_SOURCE_TYPE
+Manifest
+_GOOGLE_LABEL_BUILDER_VERSION
+dotnet_20230717_RC00
+_OUTPUT_IMAGE
+eu.gcr.io/xxxxxxxxx/appengine/test.20230725t082427:869339c8-1500-486e-b8af-08ee41b44834
+_X_GOOGLE_TARGET_PLATFORM
+flex
+_GOOGLE_LABEL_RUN_IMAGE
+eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/run:dotnet_20230717_RC00
+_GOOGLE_ASP_NET_CORE_VERSION
+6.x.x
+_ZEUS_SOURCE_LOCATION
+https://storage.googleapis.com/xxxxxxxxxxxxxxxxxx/ae/869339c8-1500-486e-b8af-08ee41b44834/manifest.json
+_GAE_APPLICATION_YAML_PATH
+app.yaml
+_GOOGLE_LABEL_BUILDER_IMAGE
+eu.gcr.io/gae-runtimes/buildpacks/google-gae-22/dotnet/builder:dotnet_20230717_RC00
+_GOOGLE_DEBUG
+true
+_GOOGLE_RUNTIME_VERSION
+6
+_GOOGLE_RUNTIME
+dotnet
+Built-in substitutions
+BUILD_ID
+41bb3332-4046-4a2e-a355-045e898b8ed0
+LOCATION
+global
+PROJECT_ID
+xxxxxxxxxxxxxx
+PROJECT_NUMBER
+651363219778
+Environment variables
+CNB_APP_DIR
+/workspace
+CNB_ANALYZED_PATH
+/layers/analyzed.toml
+CNB_BUILDPACKS_DIR
+/cnb/buildpacks
+CNB_GROUP_PATH
+/layers/group.toml
+CNB_LAYERS_DIR
+/layers
+CNB_PLAN_PATH
+/layers/plan.toml
+CNB_PLATFORM_DIR
+/platform
+CNB_PLATFORM_API
+0.11
+CNB_NO_COLOR
+true
+CNB_USER_ID
+33
+CNB_GROUP_ID
+33
+CNB_SKIP_RESTORE
+true

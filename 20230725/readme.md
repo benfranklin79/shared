@@ -21,8 +21,13 @@ gcloud app deploy
 ```
 
 in the root of the project `AppEngineTest` and the file
-[app_deploy_masked](./app_deploy_masked.log) is
-the build output.
+[app_deploy_masked](./app_deploy_masked.log) is the build output. Even though
+this fails the cloud build corresponding to this succeeds and the [execution details](./exec_details_1.txt) 
+for the build are far more comprehensive. In particular you can see
+that the build has picked up the .NET 6 runtime. For builds which use the
+terraform deployment the [execution details](./exec_details_2.txt) are not as comprehensive. You can 
+see that the `_GAE_APPLICATION_YAML_PATH` variable has been set but the runtime
+is not picked up.
 
 ## Terraform Deployment
 
