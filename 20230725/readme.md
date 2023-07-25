@@ -34,7 +34,7 @@ is not picked up.
 We use this command to create the publish package which is zipped up:
 
 ```
-dotnet publish -c release -o 'tenantProcessor' 'path to csproj file'
+dotnet publish -c release '.\AppEngineTest\AppEngineTest.csproj'
 ```
 
 [Here](main.tf) is the terraform used to deploy the application. As mentioned in the
