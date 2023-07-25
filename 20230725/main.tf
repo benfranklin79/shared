@@ -1,3 +1,24 @@
+# Configure the Google Cloud provider
+provider "google" {
+  credentials = xxxxxxx
+  project     = var.project
+  region      = "europe-west2"
+}
+
+terraform {
+  backend "gcs" {
+    bucket      = "SomeBucket"
+    prefix      = "SomePrefix"
+    credentials = "xxxxx"
+  }
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "4.74.0"
+    }
+  }
+}
+
 data "archive_file" "alertsProcessor" {
   type        = "zip"
   #assuming you're building the publish package locally
