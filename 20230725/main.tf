@@ -2,7 +2,7 @@ data "archive_file" "alertsProcessor" {
   type        = "zip"
   #assuming you're building the publish package locally
   source_dir  = "${path.module}/AppEngineTest\bin\release\net6.0\publish"
-  output_path = "${path.module}/../_archive/appengine/alerts/tenantProcessor.zip"
+  output_path = "${path.module}/_archive/tenantProcessor.zip"
 }
 
 resource "google_storage_bucket_object" "alertsProcessor" {
