@@ -5,8 +5,8 @@ This folder contains extra supporting information for
 
 The actual deployment I'm having problems with creates a publish package
 of an application and saves it as an artifact which is then picked up by 
-a separate build process which runs a terraform deployment. More details 
-to be added later.
+a separate build process which runs a terraform deployment. See (terraform
+deployment)[#terraform-deployment]
 
 ## First Test - Deploy Without Terraform
 
@@ -20,7 +20,8 @@ Have run the command:
 gcloud app deploy
 ```
 
-in the root of the project `AppEngineTest` and the file `app_deploy_masked` is
+in the root of the project `AppEngineTest` and the file
+[app_deploy_masked](./app_deploy_masked.log) is
 the build output.
 
 ## Terraform Deployment
