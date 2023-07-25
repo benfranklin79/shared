@@ -23,7 +23,7 @@ resource "google_app_engine_flexible_app_version" "tenantProcessor_v1" {
   }
   
   env_variables = {
-    ASPNETCORE_ENVIRONMENT =  "xxxxx" 
+    ASPNETCORE_ENVIRONMENT =  "Development" 
     APP_PROJECT_ID         = "some project value"
   }
 
