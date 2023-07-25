@@ -1,7 +1,7 @@
 # Configure the Google Cloud provider
 provider "google" {
   credentials = xxxxxxx
-  project     = var.project
+  project     = "some project id"
   region      = "europe-west2"
 }
 
