@@ -3,6 +3,8 @@
 This folder contains extra supporting information for
 [this stackoverflow link](https://stackoverflow.com/questions/76755150/why-does-a-terraform-deployment-of-a-gae-net-service-fail-despite-specifying-th)
 
+An [issue](https://github.com/hashicorp/terraform-provider-google/issues/15281) has been raised for this.
+
 The actual deployment I'm having problems with creates a publish package
 of an application and saves it as an artifact which is then picked up by 
 a separate build process which runs a terraform deployment. See [terraform
