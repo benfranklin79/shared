@@ -1,6 +1,13 @@
 ﻿runtime: aspnetcore
 env: flex
+
+# just a name I've decided to use for this test
 service: "test"
 
 runtime_config:
-    operating_system: "ubuntu22"
+  operating_system: "ubuntu22"
+
+# this is the network that's available on my test environment most likely yours
+# will be default
+network:
+  name: "test-network"
